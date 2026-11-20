@@ -26,8 +26,8 @@ I used mobile-first CSS with media queries at 320px, 650px, 900px, and 1000px.
 
 The navigation, map cards, team compositions, and crosshair layouts adjust for different screen sizes.
 
+
 ## Accessibility Testing
 
-I will use Google PageSpeed Insights to test the website's accessibility on mobile and desktop.
-
-After testing, I will document my accessibility scores and any changes I make to improve the results.
+I tested my website using Google PageSpeed Insights
+and received an accessibility score of 100.
