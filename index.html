@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A VALORANT website for finding team comps, agent counters, map picks, and pro crosshairs.">
+
+    <title>VALORANT Strategy Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="#home" class="logo">
+                VALORANT<span>HUB</span>
+            </a>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#maps">Maps</a></li>
+                <li><a href="#comps">Team Comps</a></li>
+                <li><a href="#counters">Counters</a></li>
+                <li><a href="#crosshairs">Crosshairs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ---------- HOME PAGE ---------- -->
+
+        <section id="home" class="hero">
+            <p class="eyebrow">VALORANT STRATEGY HUB</p>
+
+            <h1>Find Your <span>Perfect Comp.</span></h1>
+
+            <p>
+                Not sure who to play? Check out different maps,
+                find team comps, see which agents counter each other,
+                and try out pro player crosshairs.
+            </p>
+
+            <a href="#maps" class="button">Check Out Maps</a>
+        </section>
+
+
+        <!-- ---------- MAPS PAGE ---------- -->
+
+        <section id="maps" hidden>
+            <h2>Maps & Agents</h2>
+
+            <p>
+                Pick a map to see which agents work well on it
+                and what kind of team comp you could run.
+            </p>
+
+            <div id="map-container"></div>
+
+            <!-- selected map and recommended agents -->
+            <div id="map-details" hidden aria-live="polite"></div>
+        </section>
+
+
+        <!-- ---------- TEAM COMPS PAGE ---------- -->
+
+        <section id="comps" hidden>
+            <h2>Team Comps</h2>
+
+            <p>
+                Choose a map and playstyle to find a team comp
+                that works for you.
+            </p>
+
+            <div class="comp-filters">
+
+                <div class="filter-group">
+                    <label for="comp-map">Choose a Map</label>
+
+                    <select id="comp-map">
+                        <option value="">Select a map</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="comp-style">Choose a Playstyle</label>
+
+                    <select id="comp-style">
+                        <option value="balanced">Balanced</option>
+                        <option value="aggressive">Aggressive</option>
+                        <option value="defensive">Defensive</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div id="comps-container" aria-live="polite">
+                <p>Select a map to see a recommended team comp.</p>
+            </div>
+        </section>
+
+
+        <!-- ---------- AGENT COUNTERS PAGE ---------- -->
+
+        <section id="counters" hidden>
+            <h2>Agent Counters</h2>
+
+            <p>
+                Having trouble playing against a certain agent?
+                Select an enemy agent to see who can counter them
+                and how to play against their abilities.
+            </p>
+
+            <div class="counter-filters">
+
+                <div class="filter-group">
+                    <label for="counter-agent">
+                        Choose an Enemy Agent
+                    </label>
+
+                    <select id="counter-agent">
+                        <option value="">Select an agent</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div id="counters-container" aria-live="polite">
+                <p>Select an enemy agent to see their counters.</p>
+            </div>
+        </section>
+
+
+        <!-- ---------- PRO CROSSHAIRS PAGE ---------- -->
+
+        <section id="crosshairs" hidden>
+            <h2>Pro Crosshairs</h2>
+
+            <p>
+                Explore VALORANT crosshair presets and find one
+                that matches your playstyle. Copy a crosshair
+                code and import it directly into your game.
+            </p>
+
+            <div class="crosshair-filters">
+
+                <div class="filter-group">
+                    <label for="crosshair-style">
+                        Filter by Crosshair Style
+                    </label>
+
+                    <select id="crosshair-style">
+                        <option value="all">All Styles</option>
+                        <option value="dot">Dot</option>
+                        <option value="small">Small Cross</option>
+                        <option value="classic">Classic Cross</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div
+                id="crosshair-container"
+                class="crosshair-grid"
+                aria-live="polite"
+            >
+                <p>Crosshair presets coming soon.</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ---------- FOOTER ---------- -->
+
+    <footer>
+        <p>VALORANT Strategy Hub | MI 349 Project</p>
+
+        <p>
+            This is a student-made project and is not
+            affiliated with Riot Games.
+        </p>
+    </footer>
+
+</body>
+</html>
